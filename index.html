@@ -18,6 +18,8 @@
 
   <button id="fifth-color">click color5</button>
 
+  <button id="sixth-color">click color6</button>
+
 
   <script src="./js/events.js"></script>
   <script>
@@ -39,12 +41,18 @@
     } */
 
 
-    const fifthColor = document.getElementById('fifth-color');
+    /* const fifthColor = document.getElementById('fifth-color');
     fifthColor.addEventListener('click', fifthButton);
 
     function fifthButton(){
       document.body.style.backgroundColor="#f4ff4d";
-    }
+    } */
+
+
+    const sixthColor = document.getElementById('sixth-color');
+    sixthColor.addEventListener('click', function (){
+      document.body.style.backgroundColor="lightblue";
+    })
 
   </script>
 </body>
