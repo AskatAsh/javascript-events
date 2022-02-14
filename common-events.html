@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <input type="text" name="update" id="update-txt">
+  <input type="text" name="update" id="name-field">
   <button id="update-name">Update</button>
   <!-- <p id="clicking-method"></p> -->
   <button onclick="justByClicking()">Just function</button>
@@ -28,6 +28,11 @@
     document.getElementById('handle-event').addEventListener('click', function () {
       const para = document.getElementById('clicking-method');
       para.innerText = 'Event handling by adding text using shortcut eventListener';
+    })
+
+    document.getElementById('update-name').addEventListener('click',function(){
+      const nameField = document.getElementById('name-field');
+      console.log(nameField);
     })
 
   </script>
