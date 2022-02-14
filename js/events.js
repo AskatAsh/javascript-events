@@ -1,11 +1,11 @@
 function colorTwo() {
-  document.body.style.backgroundColor = "#e9ffb1";
+  document.body.style.backgroundColor = "#dcff83";
 }
 
 // event handling assigning function name to onclick
 const thirdColor = document.getElementById("third-color");
 function colorThree() {
-  document.body.style.backgroundColor = "#feffda";
+  document.body.style.backgroundColor = "#fdffb6";
 }
 thirdColor.onclick = colorThree;
 
