@@ -7,12 +7,22 @@
   <title>Common event handling</title>
 </head>
 <body>
-  
+  <!-- <p id="clicking-method"></p> -->
+  <button onclick="justByClicking()">Just function</button>
+  <button id="handle-event">Direct addEventListener</button>
 
-
-
-
+  <p id="clicking-method"></p>
 
   <script src="./js/common-events.js"></script>
+  <script>
+
+    function justByClicking(){
+      const p = document.getElementById('clicking-method');
+      p.innerText='Adding text in a paragraph by using function event handling';
+    }
+
+   
+
+  </script>
 </body>
 </html>
