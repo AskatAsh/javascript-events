@@ -8,3 +8,11 @@ function colorThree() {
   document.body.style.backgroundColor = "#feffda";
 }
 thirdColor.onclick = colorThree;
+
+
+const fourthColor = document.getElementById("fourth-color");
+// fourthColor.onclick = function colorFour(){
+fourthColor.onclick = function colorFour() {
+  // anonymous function
+  document.body.style.backgroundColor = "#ffc7ff";
+};
