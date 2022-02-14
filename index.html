@@ -8,6 +8,26 @@
 </head>
 <body>
   <h1 onclick="console.log('the heading is clicked')">Practicing js events</h1>
-  <button onclick="console.log(7)">Click me</button>
+  <button onclick="document.body.style.backgroundColor='#daffff'">Click me</button>
+
+  <button onclick="colorTwo()">click color2</button>
+
+  <button id="third-color">click color3</button>
+
+
+  <script src="./js/events.js"></script>
+  <script>
+    /* function colorTwo(){
+      document.body.style.backgroundColor='#e9ffb1';
+    } */
+
+
+    /* const thirdColor = document.getElementById('third-color');
+    function colorThree(){
+      document.body.style.backgroundColor="#feffda";
+    }
+    thirdColor.onclick = colorThree; */
+
+  </script>
 </body>
 </html>
