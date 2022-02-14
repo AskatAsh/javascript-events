@@ -22,6 +22,10 @@
 
   <button id="seventh-color">click color7</button>
 
+  <button onclick="eventHandling()">Add Event</button>
+
+  <button id="add-event">Add Another Event</button>
+  <p id="para-one"></p>
 
   <script src="./js/events.js"></script>
   <script>
@@ -61,6 +65,19 @@
       document.body.style.backgroundColor = "lightcoral";
     }) */
 
+
+    // add event using function
+    function eventHandling(){
+      const addEvent = document.getElementById('para-one');
+      addEvent.innerHTML='This is the event text after clicking button';
+    }
+    
+
+    // add event using direct shortcut
+    document.getElementById('add-event').addEventListener('click',function(){
+      const p = document.getElementById('para-one');
+      p.innerText="Direct shortcut method of adding event"
+    })
   </script>
 </body>
 </html>
