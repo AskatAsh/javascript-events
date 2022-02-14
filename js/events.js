@@ -27,3 +27,7 @@ const sixthColor = document.getElementById("sixth-color");
 sixthColor.addEventListener("click", function () {
   document.body.style.backgroundColor = "lightblue";
 });
+
+document.getElementById("seventh-color").addEventListener("click", function () {
+  document.body.style.backgroundColor = "lightcoral";
+});
