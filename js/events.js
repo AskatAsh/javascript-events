@@ -31,3 +31,15 @@ sixthColor.addEventListener("click", function () {
 document.getElementById("seventh-color").addEventListener("click", function () {
   document.body.style.backgroundColor = "lightcoral";
 });
+
+// add event using function
+function eventHandling() {
+  const addEvent = document.getElementById("para-one");
+  addEvent.innerText = "This is the event text after clicking button";
+}
+
+// add event using direct shortcut
+document.getElementById("add-event").addEventListener("click", function () {
+  const p = document.getElementById("para-one");
+  p.innerText = "Direct shortcut method of adding event";
+});
