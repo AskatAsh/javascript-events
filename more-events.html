@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>More javascript events</title>
 </head>
+
 <body>
   <h2>More javascript events</h2>
   <section>
@@ -15,21 +17,42 @@
   </section>
 
   <script>
-    document.getElementById("delete-btn").addEventListener("click",function(){
+    document.getElementById("delete-btn").addEventListener("click", function () {
       const secretInfo = document.getElementById("secret-info");
       secretInfo.style.display = 'none';
     })
 
     // focus input text
-    document.getElementById("delete-confirm").addEventListener("focus",function(){
+    document.getElementById("delete-confirm").addEventListener("focus", function () {
       document.body.style.backgroundColor = "lightcoral";
     })
 
     // blur clicking outside input text
-    document.getElementById("delete-confirm").addEventListener("blur",function(){
+    document.getElementById("delete-confirm").addEventListener("blur", function () {
       document.body.style.backgroundColor = "white";
     })
-    
+
+    // keydown in the input text
+    /* document.getElementById("delete-confirm").addEventListener("keydown",function(){
+      const deleteField = document.getElementById("delete-confirm");
+      console.log(deleteField.value);
+    }) */
+
+    /* document.getElementById("delete-confirm").addEventListener("keypress", function () {
+      const deleteField = document.getElementById("delete-confirm");
+      console.log(deleteField.value);
+    }) */
+
+    document.getElementById("delete-confirm").addEventListener("keyup", function () {
+      const deleteField = document.getElementById("delete-confirm");
+      console.log(deleteField.value);
+    })
+
+    document.getElementById("delete-confirm").addEventListener("change", function () {
+      const deleteField = document.getElementById("delete-confirm");
+      console.log(deleteField.value);
+    })
   </script>
 </body>
+
 </html>
