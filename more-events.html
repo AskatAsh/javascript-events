@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More javascript events</title>
+</head>
+<body>
+  <h2>More javascript events</h2>
+  <section>
+    <h3 id="secret-info">Some secret information about js event handling</h3>
+    <button id="delete-btn">Delete</button>
+  </section>
+
+  <script>
+    document.getElementById("delete-btn").addEventListener("click",function(){
+      const secretInfo = document.getElementById("secret-info");
+      secretInfo.style.display = 'none';
+    })
+  </script>
+</body>
+</html>
